@@ -16,7 +16,9 @@ const app=express();
 //         });
 
 app.get('/',(req,res,next)=>{
-    res.send("This my first app")
+    res.send(`
+    <div>This my div</div>
+    `)
 })
 app.get('/users',(req,res,next)=>{
     res.send('Users')
